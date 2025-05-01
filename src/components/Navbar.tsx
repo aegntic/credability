@@ -32,6 +32,9 @@ const Navbar = () => {
           <Link to="/" className="text-gray-600 hover:text-gray-900">
             Home
           </Link>
+          <Link to="/landing" className="text-gray-600 hover:text-gray-900">
+            Landing
+          </Link>
 
           {user ? (
             <DropdownMenu>

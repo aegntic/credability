@@ -11,6 +11,7 @@ import Navbar from "./components/Navbar";
 import AuthRoutes from "./components/AuthRoutes";
 import Profile from "./pages/Profile";
 import ProtectedRoute from "./components/ProtectedRoute";
+import LegacyWebsite from "./components/LegacyWebsite";
 
 const queryClient = new QueryClient();
 
@@ -26,6 +27,7 @@ const App = () => (
             <main className="flex-grow">
               <Routes>
                 <Route path="/" element={<Index />} />
+                <Route path="/landing" element={<LegacyWebsite />} />
                 <Route path="/auth/*" element={<AuthRoutes />} />
                 <Route 
                   path="/profile" 
