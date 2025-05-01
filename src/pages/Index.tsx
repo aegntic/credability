@@ -7,14 +7,14 @@ const Index = () => {
   const { user } = useAuth();
 
   return (
-    <div className="min-h-screen bg-gray-50 py-12">
+    <div className="min-h-[calc(100vh-4rem)] bg-background py-12">
       <div className="container mx-auto px-4">
-        <div className="mx-auto max-w-3xl rounded-lg bg-white p-8 shadow-md">
-          <h1 className="mb-6 text-center text-4xl font-bold">Welcome to CREDABILITY</h1>
+        <div className="mx-auto max-w-3xl rounded-lg bg-card p-8 shadow-md">
+          <h1 className="mb-6 text-center text-4xl font-bold text-foreground">Welcome to CREDABILITY</h1>
           
           {user ? (
             <div className="space-y-6">
-              <p className="text-center text-xl text-gray-600">
+              <p className="text-center text-xl text-muted-foreground">
                 Hello, {user.email}! You are now signed in.
               </p>
               <div className="flex justify-center">
@@ -25,7 +25,7 @@ const Index = () => {
             </div>
           ) : (
             <div className="space-y-6">
-              <p className="text-center text-xl text-gray-600">
+              <p className="text-center text-xl text-muted-foreground">
                 Sign in to get started with our application.
               </p>
               <div className="flex justify-center space-x-4">
