@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '@/contexts/AuthContext';
@@ -33,7 +32,7 @@ const Navbar = () => {
             Home
           </Link>
           <Link to="/landing" className="text-gray-600 hover:text-gray-900">
-            Landing
+            Product
           </Link>
 
           {user ? (

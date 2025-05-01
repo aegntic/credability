@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -11,7 +10,7 @@ import Navbar from "./components/Navbar";
 import AuthRoutes from "./components/AuthRoutes";
 import Profile from "./pages/Profile";
 import ProtectedRoute from "./components/ProtectedRoute";
-import LegacyWebsite from "./components/LegacyWebsite";
+import LandingPage from "./pages/LandingPage";
 
 const queryClient = new QueryClient();
 
@@ -27,7 +26,7 @@ const App = () => (
             <main className="flex-grow">
               <Routes>
                 <Route path="/" element={<Index />} />
-                <Route path="/landing" element={<LegacyWebsite />} />
+                <Route path="/landing" element={<LandingPage />} />
                 <Route path="/auth/*" element={<AuthRoutes />} />
                 <Route 
                   path="/profile" 
